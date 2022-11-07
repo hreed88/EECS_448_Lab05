@@ -1,0 +1,71 @@
+.container{
+        display: grid;
+        grid-template-areas:
+          "header header header header header header"
+          "menu main main main something something"
+          "websites footer footer footer something something";
+        padding: 10px;
+        gap: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+.name{
+    grid-area: header;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.profilePic{
+    width: 200px;
+    height: 120px;
+    grid-area: menu;
+}
+
+.profilePic img{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    background-color:grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+
+.about{
+    grid-area: main;
+    background-color:aliceblue;
+    color: #3f0404;
+}
+
+.about:hover{
+    color: white;
+    background-color: black;
+}
+
+.websites{
+    grid-area: websites;
+    padding-top: 150px;
+}
+
+.websites h2{
+    background-color: aliceblue;
+}
+
+.websites ul{
+    margin-right: auto;
+    background-color: aliceblue;
+}
+
+.Youtube{
+    grid-area: footer;
+    margin:auto;
+    top:25%;
+    left:50%;
+    border-style: groove;
+    border-width: 10px;
+}

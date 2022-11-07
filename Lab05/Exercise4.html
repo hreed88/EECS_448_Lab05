@@ -1,0 +1,77 @@
+<html>
+<head>
+    <script>
+        function changeParagraph(){
+
+
+            document.getElementById("myP").style.backgroundColor = document.getElementById("backColor").value;
+            document.getElementById("myP").style.borderColor = document.getElementById("bColor").value;
+            document.getElementById("myP").style.borderWidth = document.getElementById("bWidth").value;
+
+        }
+    </script>
+
+<style>
+    p{
+        border-style:solid;
+    }
+
+    body{
+         background-color:grey;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      p{
+        background-color: white;
+      }
+</style>
+<title>Exercise 4</title>
+</head>
+<body>
+<a href="index.html">Home</a>
+<h1>Paragraph color changer</h1>
+<p id ="myP">
+    {Man} Once upon a time there was a lovely princess.
+   
+   But she had an enchantment upon her of a fearful sort which could only 
+   
+   be broken by love's first kiss.
+   
+   She was locked away in a castle guarded by a terrible fire-breathing 
+   
+   dragon.
+   
+   Many brave knigts had attempted to free her from this dreadful prison, 
+   
+   but non prevailed.
+   
+   She waited in the dragon's keep in the highest room of the tallest 
+   
+   tower for her true love and true love's first kiss.
+   
+   {Laughing} 
+   
+   Like that's ever gonna happen.
+   
+   {Paper Rusting, Toilet Flushes}
+   
+   What a load of -</p>
+   <br>
+   <h3>Please change the border of the paragraph</h3>
+   <form>
+    <label>Color</label>
+    <input type="color" id="bColor"><br><br>
+    <label>Width</label>
+    <input type="number" id="bWidth"><br>
+   <br>
+   <h3>Please change the Background color of the paragraph</h3>
+    <label>Color</label>
+    <input type="color" value="#ffffff" id="backColor"><br>
+   </form>
+   <button type="button" onclick="changeParagraph()">
+    Submit
+    </button>
+   
+</body>
+</html>
+

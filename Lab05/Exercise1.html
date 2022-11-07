@@ -1,0 +1,52 @@
+<html>
+<head>
+   <style>
+      h1{
+	      text-align: center;
+	      background-color: black;
+	      color:white;
+      }
+
+      body{
+         background-color:grey;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      input{
+         margin:10;
+      }
+   </style>
+<title>Exercise1</title>
+</head>
+<body>
+<h1>Password Validator</h1>
+<a href="index.html"> Home </a>
+<br>
+<label for="password1">Password 1:</label>
+<input type="text" id="password1">
+<br>
+<label for="password2">Password 2:</label>
+<input type="text" id="password2">
+<br>
+<button onclick="password()">Validate</button>
+<p id="result"></p>
+<script>
+function password(){
+    var pass1 = document.getElementById("password1").value;
+    var pass2 = document.getElementById("password2").value;
+    var text;
+    if(pass1 === pass2 ){
+        if(pass1.length < 8 || pass2.length < 8)
+     	text = "The password must be at least 8 characters long!";
+     	else
+        text = "The passwords match";
+        }
+     else
+        text = "The passwords do not match!";
+        
+       document.getElementById("result").innerHTML = text;
+}
+</script>
+</body>
+</html>
+
